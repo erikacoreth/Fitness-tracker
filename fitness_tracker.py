@@ -23,3 +23,52 @@ class WorkoutSession:
     
     
     """
+
+def __init__(self, exercise_name, duration, intensity):
+    """
+    Iinitializes a new WorkoutSession instance.
+
+    Args:
+    exercise_name (str): Name of the exercise performed.
+    duration (int): Duration of the workout in minutes.
+    intensity (str): Intensity level of the workout ("Low", "Medium", or "High").
+
+    
+    """
+    pass
+
+def calculate_calories(self):
+    """
+    Calculates the estimated number of calories burned during the workout. 
+
+    Returns:
+    int: Estimated calories burned based on duration and intensity level.
+    
+    """
+    pass
+
+def get_summary(self):
+
+    """
+    Generates a formatted summary of the workout session.
+
+    Returns:
+    str: A human-readable string describing the workout details.
+
+    
+    """
+    pass
+
+def update_duration(self, new_duration):
+
+    """
+    Updates the duration of the workout session.
+
+    Args:
+    new_duration (int): The new duration of the workout in minutes.
+
+    Returns:
+    None
+
+    """
+    pass
