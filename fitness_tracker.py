@@ -35,17 +35,27 @@ def __init__(self, exercise_name, duration, intensity):
 
     
     """
-    pass
+    self.exercise_name = exercise_name
+    self.duration = duration
+    self.intetnsity = intensity
+
 
 def calculate_calories(self):
     """
     Calculates the estimated number of calories burned during the workout. 
 
     Returns:
-    int: Estimated calories burned based on duration and intensity level.
+    int: Estimated calories burned (cal/min) based on duration and intensity level.
     
     """
-    pass
+    intensity_rank = {
+        "Low": 5,
+        "Medium": 10,
+        "High": 15
+    }
+    calories_per_min = intensity_rank.get(self.intensity, 0)
+    return self.duration * calories_per_min
+
 
 def get_summary(self):
 
@@ -57,7 +67,12 @@ def get_summary(self):
 
     
     """
-    pass
+    return (
+        f"Exercise: {self.exercise_name}\n"
+        f"Duration: {self.duration} minutes \n"
+        f"Intensity: {self.intensity}\n"
+        f"Estimated Calories Burned: {self.calculate_calories()}"
+    )
 
 def update_duration(self, new_duration):
 
@@ -71,4 +86,4 @@ def update_duration(self, new_duration):
     None
 
     """
-    pass
+    self.duration = new_duration
