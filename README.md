@@ -23,5 +23,5 @@ Rather than emphasizing advanced logic, the project emphasized:
 Run the following command in the project directory:
 
 ```bash
-pydoc -w workoutsession
+python3 -m pydoc -w fitness_tracker
 ```
